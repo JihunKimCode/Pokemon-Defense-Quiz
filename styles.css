@@ -56,18 +56,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  #types {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Hover */
 .type-img:hover {
   filter: grayscale(0%);
   opacity: 1;
 }
+
 /* Types */
 .type-img {
   width: 70px;
@@ -124,7 +118,7 @@ body {
   min-height: 30px;
 }
 
-/* Popup */
+/* Popup Result */
 #popup {
   position: fixed;
   inset: 0;
@@ -145,11 +139,11 @@ body {
 }
 
 #resultText{
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .final-label {
@@ -177,4 +171,19 @@ body {
 
 .footer a{
     color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Mobile Hovering Effect */
+  .type-img:hover {
+    filter: grayscale(100%);
+    opacity: 0.75;
+  }
+  .btn:hover{
+    background: #309ae2;
+  }
 }
