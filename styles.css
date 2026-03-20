@@ -178,12 +178,15 @@ body {
   #types {
     grid-template-columns: repeat(3, 1fr);
   }
-  /* Mobile Hovering Effect */
-  .type-img:hover {
+  .type-img:hover{
     filter: grayscale(100%);
     opacity: 0.75;
   }
-  .btn:hover{
+  .type-img.selected:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  .btn:hover {
     background: #309ae2;
   }
 }
